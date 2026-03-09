@@ -1,0 +1,70 @@
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card-skeleton {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-card);
+}
+
+.poster-sk { aspect-ratio: 2/3; width: 100%; }
+
+.sk-info { padding: 12px; display: flex; flex-direction: column; gap: 8px; }
+.title-sk { height: 14px; width: 80%; border-radius: 4px; }
+.meta-sk { height: 10px; width: 50%; border-radius: 4px; }
+
+.hero-skeleton {
+  position: relative;
+  height: 80vh;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.hero-bg-sk {
+  position: absolute;
+  inset: 0;
+  border-radius: 0;
+}
+
+.hero-content-sk {
+  position: absolute;
+  bottom: 80px;
+  left: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-title-sk { height: 56px; width: 480px; border-radius: 8px; }
+.hero-desc-sk { height: 16px; width: 540px; border-radius: 4px; }
+.hero-desc-sk.short { width: 380px; }
+
+.hero-btns-sk { display: flex; gap: 12px; margin-top: 8px; }
+.btn-sk { height: 44px; width: 140px; border-radius: 8px; }
+.btn-sk.small { width: 100px; }
+
+.spinner-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent-gold);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .movies-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+  .hero-content-sk { left: 24px; bottom: 60px; }
+  .hero-title-sk { width: 280px; height: 40px; }
+  .hero-desc-sk { width: 280px; }
+}
