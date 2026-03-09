@@ -4,6 +4,8 @@ A production-grade movie platform built with React, Redux Toolkit, Node.js, Expr
 
 ---
 
+Live Link :- https://cineplex-frontend.onrender.com/
+
 ## 🚀 Features
 
 ### Frontend
