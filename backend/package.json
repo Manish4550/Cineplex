@@ -1,8 +1,6 @@
 {
   "name": "cineplex-backend",
   "version": "1.0.0",
-  "description": "CinePlex Movie Platform Backend",
-  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
@@ -15,8 +13,5 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.3.1",
     "express-validator": "^7.0.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1"
   }
 }
